@@ -76,13 +76,13 @@ function App() {
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden">
-      {/* 🎨 Animated Gradient Background */}
+    
       <div className="absolute inset-0 -z-10">
         <div className="h-full w-full bg-gradient-to-br from-purple-600 via-pink-500 to-blue-600 animate-gradient blur-2xl opacity-20" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple-300 via-transparent to-transparent" />
       </div>
 
-      {/* 💎 Glassmorphism Card Centered */}
+      
       <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="bg-black/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl w-full max-w-xl p-6 sm:p-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-200 mb-6 text-center">
@@ -185,7 +185,7 @@ function App() {
         </div>
       </div>
 
-      {/* Optional Animation Utility */}
+      
       <style>
         {`
           .animate-gradient {

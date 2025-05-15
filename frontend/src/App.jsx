@@ -86,7 +86,7 @@ function App() {
       <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="bg-black/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl w-full max-w-xl p-6 sm:p-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-200 mb-6 text-center">
-            ToDo List
+            ToDo List 😄
           </h1>
 
           <form

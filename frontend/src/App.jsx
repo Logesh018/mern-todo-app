@@ -76,13 +76,13 @@ function App() {
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden">
-    
+
       <div className="absolute inset-0 -z-10">
         <div className="h-full w-full bg-gradient-to-br from-purple-600 via-pink-500 to-blue-600 animate-gradient blur-2xl opacity-20" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple-300 via-transparent to-transparent" />
       </div>
 
-      
+
       <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="bg-black/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl w-full max-w-xl p-6 sm:p-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-200 mb-6 text-center">
@@ -91,10 +91,10 @@ function App() {
 
           <form
             onSubmit={addTodo}
-            className="flex items-center gap-2 shadow-sm border border-gray-200 p-2 rounded-lg bg-white/30"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shadow-sm border border-gray-200 p-2 rounded-lg bg-white/30 w-full"
           >
             <input
-              className="flex-1 outline-none px-4 py-2 text-sm sm:text-base text-gray-100 placeholder-gray-400 rounded-md focus:ring-2 focus:ring-purple-400 transition"
+              className="flex-1 outline-none px-4 py-2 text-sm sm:text-base text-gray-100 placeholder-gray-400 rounded-md focus:ring-2 focus:ring-purple-400 transition w-full"
               type="text"
               value={newTodo}
               onChange={(e) => setNewTodo(e.target.value)}
@@ -103,11 +103,12 @@ function App() {
             />
             <button
               type="submit"
-              className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-md text-sm sm:text-base font-medium shadow hover:shadow-md transition"
+              className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-md text-sm sm:text-base font-medium shadow hover:shadow-md transition w-full sm:w-auto"
             >
               Add Task
             </button>
           </form>
+
 
           <div className="mt-6">
             {todos.length === 0 ? (
@@ -185,7 +186,7 @@ function App() {
         </div>
       </div>
 
-      
+
       <style>
         {`
           .animate-gradient {

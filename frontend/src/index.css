@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+body {
+background-color: #0d021a;
+background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+}
+
+/* background-color: #0d021a;
+background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+ */
